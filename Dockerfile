@@ -1,9 +1,13 @@
-FROM node:10
-RUN mkdir -p /usr/app
-WORKDIR /usr/app
-COPY . /usr/app
-RUN \ 
-    yarn && \
-    yarn build
+FROM node:16.20.2
+
 EXPOSE 3000
-CMD [ "yarn", "start"]
+
+WORKDIR /app
+
+COPY ["package.json", "yarn.lock", "./"]
+RUN yarn install --prod
+
+COPY . .
+RUN yarn build
+
+CMD [ "yarn", "prod" ]

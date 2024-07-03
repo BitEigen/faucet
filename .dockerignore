@@ -1,0 +1,15 @@
+.git*
+.next
+node_modules
+diagrams
+
+.DS_Store
+.dockerignore
+.env.*
+.gitignore
+.prettierignore
+.prettierrc
+Dockerfile
+jest.config.js
+README.md
+yarn-error.log

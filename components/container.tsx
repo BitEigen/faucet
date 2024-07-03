@@ -92,7 +92,7 @@ function Container() {
         <Navigation />
         <div className='content-body'>
           <div className='title-faucet'>
-            <div className='rootstock'>Rootstock</div>
+            <div className='rootstock'>BitEigen</div>
             <div className='faucet'>Faucet</div>
           </div>
           <div className='container-faucet'>

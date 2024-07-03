@@ -6,7 +6,7 @@ class FrontendText {
 
     const withTransactionHash =
       message +
-      '<br/> <a href="https://explorer.testnet.rsk.co/tx/' +
+      '<br/> <a href="https://explorer-testnet.biteigen.xyz/tx/' +
       txHash +
       '" target="_blank">Transaction hash</a>';
 
@@ -21,7 +21,7 @@ class FrontendText {
       return 'The transaction wasn\'t propagated due to internal problems. <br/> Please try again in a while';
     } else if (receipt.status == false) {
       return (
-        'The transaction was reverted by the RVM. <br/> <a href="https://explorer.testnet.rsk.co/tx/' +
+        'The transaction was reverted by the RVM. <br/> <a href="https://explorer-testnet.biteigen.xyz/tx/' +
         txHash +
         '" target="_blank">Transaction hash</a>'
       );

@@ -31,6 +31,7 @@ function Carousel() {
   };
   return (
     <div className="content-carousel">
+       {/* @ts-expect-error Server Component */}
       <ReactCardCarousel {...reactCardCarouselProps}>
         <Row>
           <RskLinkCard {...devportalLinkCardProps} />
